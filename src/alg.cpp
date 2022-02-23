@@ -13,18 +13,21 @@ return true;
 }
 
 uint64_t nPrime(uint64_t n) {
-uint64_t k = 1;
-uint64_t k1 = 0;
-for(uint64_t t = 3; t < n; t++) {
-for(uint64_t i = 2; i < t; i++) {
-  if (t % i == 0) {
-    k1 = 0;
+uint64_t l = 1;
+for(uint64_t i = 2; i < n; i++) {
+  uint64_t ifsimp = 0;
+for(uint64_t k = 2; k < i; k++) {
+  if (i % k == 0) {
+    break;
   } else {
-    k = k + 1;
+    ifsimp = 1;
   }
 }
+  if (ifsimp == 1) {
+    l += 1;
 }
-return k;
+}
+return l;
 }
 
 uint64_t nextPrime(uint64_t value) {
