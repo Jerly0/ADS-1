@@ -19,11 +19,11 @@ for(uint64_t i = 3; i <= n; i++) {
   ifsimp = 0;
 for(uint64_t k = 2; k < i; k++) {
   if (i % k == 0) {
-    ifsimp += 1;
+    ifsimp = ifsimp + 1;
   }
 }
   if (ifsimp == 0) {
-    l += 1;
+    l = l + 1;
 }
 }
 return l;
