@@ -19,12 +19,10 @@ for(uint64_t i = 2; i <= n; i++) {
   ifsimp = 0;
 for(uint64_t k = 2; k < i; k++) {
   if (i % k == 0) {
-    break;
-  } else {
     ifsimp = 1;
   }
 }
-  if (ifsimp == 1) {
+  if (ifsimp == 0) {
     l += 1;
 }
 }
