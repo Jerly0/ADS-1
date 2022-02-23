@@ -13,13 +13,24 @@ return true;
 }
 
 uint64_t nPrime(uint64_t n) {
-// вставьте код функции
+uint64_t k = 1;
+uint64_t k1 = 0;
+for(uint64_t t = 3; t < n; t++) {
+for(uint64_t i = 2; i < t; i++) {
+  if (value % i == 0) {
+    k1 = 0;
+  } else {
+    k = k + 1;
+  }
+}
+}
+return k;
 }
 
 uint64_t nextPrime(uint64_t value) {
-// вставьте код функции
+return 0;
 }
 
 uint64_t sumPrime(uint64_t hbound) {
-// вставьте код функции
+return 0;
 }
