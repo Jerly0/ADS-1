@@ -17,7 +17,7 @@ uint64_t k = 1;
 uint64_t k1 = 0;
 for(uint64_t t = 3; t < n; t++) {
 for(uint64_t i = 2; i < t; i++) {
-  if (value % i == 0) {
+  if (t % i == 0) {
     k1 = 0;
   } else {
     k = k + 1;
