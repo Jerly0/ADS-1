@@ -19,7 +19,7 @@ for(uint64_t i = 2; i <= n; i++) {
   ifsimp = 0;
 for(uint64_t k = 2; k < i; k++) {
   if (i % k == 0) {
-    continue;
+    break;
   } else {
     ifsimp = 1;
   }
