@@ -27,11 +27,11 @@ for(uint64_t k = 2; k < i; k++) {
   if (ifsimp == 0) {
     count += 1;
 }
-if (count == n) {
+if (count == n - 1) {
   break;
 }
 }
-return l - 1;
+return l;
 }
 
 uint64_t nextPrime(uint64_t value) {
