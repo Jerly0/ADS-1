@@ -27,8 +27,8 @@ for(uint64_t k = 2; k < i; k++) {
   if (ifsimp == 0) {
     count += 1;
 }
-  if (count == n) {
-   break;
+if (count == n) {
+  break;
 }
 }
 return l;
