@@ -15,16 +15,21 @@ return true;
 uint64_t nPrime(uint64_t n) {
 uint64_t l = 1;
 uint64_t ifsimp;
-for(uint64_t i = 3; i <= n; i++) {
+uint64_t count = 0;
+for(uint64_t i = 3; i <= 10000000; i++) {
   ifsimp = 0;
+  l = i;
 for(uint64_t k = 2; k < i; k++) {
   if (i % k == 0) {
     ifsimp = ifsimp + 1;
   }
 }
   if (ifsimp == 0) {
-    l = l + 1;
+    count += 1;
 }
+  if (count == n) {
+   break; 
+  }
 }
 return l;
 }
