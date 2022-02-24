@@ -13,7 +13,7 @@ return true;
 }
 
 uint64_t nPrime(uint64_t n) {
-uint64_t l = 1;
+uint64_t l = 0;
 uint64_t ifsimp;
 uint64_t count = 0;
 for(uint64_t i = 3; i <= 10000000; i++) {
