@@ -50,5 +50,11 @@ return end;
 }
 
 uint64_t sumPrime(uint64_t hbound) {
-return 0;
+uint64_t sum = hbound;
+for(uint64_t i = 2; i < hbound; i++) {
+  if (checkPrime(i)) {
+    sum += i;
+  }
+}
+return sum;
 }
