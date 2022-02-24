@@ -4,7 +4,7 @@
 #include "alg.h"
 
 bool checkPrime(uint64_t value) {
-for(uint64_t i = 2; i < sqrt(value); i++) {
+for(uint64_t i = 2; i <= sqrt(value); i++) {
   if (value % i == 0) {
     return false;
   }
@@ -51,7 +51,7 @@ return end;
 
 uint64_t sumPrime(uint64_t hbound) {
 uint64_t sum = 0;
-for(uint64_t i = hbound - 1; i > 1; i--) {
+for(uint64_t i = 2; i < hbound; i++) {
   if (checkPrime(i)) {
     sum += i;
   }
