@@ -37,7 +37,7 @@ return l;
 uint64_t nextPrime(uint64_t value) {
 uint64_t issimp = 0;
 for(uint64_t i = value + 1; i < 10000000; i++) {
-  for(uint64_t k = 2; k < i; k++) {
+  for (uint64_t k = 2; k < i; k++) {
     if (i % k == 0) {
       break;
     } else {
