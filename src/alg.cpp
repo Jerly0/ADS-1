@@ -31,7 +31,7 @@ if (count == n) {
   break;
 }
 }
-return l;
+return l - 1;
 }
 
 uint64_t nextPrime(uint64_t value) {
