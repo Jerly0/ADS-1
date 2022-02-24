@@ -35,7 +35,19 @@ return l;
 }
 
 uint64_t nextPrime(uint64_t value) {
-return 0;
+uint64_t issimp = 0;
+for(uint64_t i = value + 1; i < 10000000; i++) {
+  for(uint64_t k = 2; k < i; k++) {
+    if (i % k == 0) {
+      break;
+    } else {
+      issimp = 1;
+    }
+}
+  if (issimp == 1) {
+    return i;
+  }
+}
 }
 
 uint64_t sumPrime(uint64_t hbound) {
